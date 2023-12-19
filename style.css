@@ -1,0 +1,2107 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Noto Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    position: relative;
+}
+
+.home-icon
+{
+    border: 1px solid rgb(234, 62, 0);
+    font-size: 1.4rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+    background-color: white;
+}
+
+.entire-section
+{
+    overflow: auto;
+    height: 100%;
+}
+
+header
+{
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.logoname
+{
+    font-size: 1.5rem;
+}
+
+.nav-logo
+{
+    display: flex;
+    width: max-content;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav1
+{
+    display: flex;
+    width: max-content;
+}
+
+.nav1-links
+{
+    margin: 0 1rem;
+    text-decoration: none;
+    color: black;
+    padding: 0.8rem;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+.nav1-links:hover,.nav2-links:hover
+{
+    color: rgb(97, 97, 97);
+}
+.nav1-links:active,.nav2-links:active
+{
+    color: grey;
+}
+
+.nav2-dropdown
+{
+    display: none;
+}
+
+/* Dropdown list for shop */
+.shop-down
+{
+    padding: 0.8rem;
+    position: relative;
+}
+
+.shop-list
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: max-content;
+}
+
+.shop-list
+{
+    display: none;
+}
+.shop-down:hover .shop-list
+{
+    display: flex;
+}
+
+.list-links
+{
+    text-decoration: none;
+    padding: 0.8rem;
+    width: 14rem;
+    background-color: white;
+    color: black;
+}
+
+.list-links:hover
+{
+    background-color: rgb(194, 194, 194);
+}
+.list-links:active
+{
+    background-color: whitesmoke;
+}
+
+.nav2
+{
+    width: max-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav2-links
+{
+    text-decoration: none;
+    color: black;
+    padding: 0.8rem;
+    margin: 0 1rem;
+    width: 75px;
+    text-align: center;
+    display: inline-block;
+}
+
+.nav-icons
+{
+    font-size: 1.5rem;
+}
+
+/* intro section starts here */
+.intro-section
+{
+    height: 100dvh;
+    background-image: url(images/xmas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    color: white;
+}
+
+.intro-filter
+{
+    background-color: rgba(0, 0, 0, 0.539);
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1
+{
+    font-size: 3rem;
+    width: 15rem;
+}
+
+.intro-desc
+{
+    width: 20rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+
+.intro-nav
+{
+    padding: 1.1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro-links
+{
+    padding: 1rem;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+    transition: all 0.5s;
+    margin: 0.3rem 0.2rem;
+}
+
+.intro-links:hover
+{
+    background-color: black;
+    color: white;
+}
+.intro-links:active
+{
+    background-color: rgba(0, 0, 0, 0.774);
+    cursor: wait;
+}
+
+/* About section */
+.about-section
+{
+    height: 110dvh;
+    margin: 6rem 0 6rem 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+}
+
+.section-image
+{
+    height: max-content;
+    width: 50%;
+}
+
+.about
+{
+    background-color: rgb(236, 236, 236);
+    padding: 3rem;
+    height: max-content;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-image
+{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.about-title
+{
+    font-size: 1.2rem;
+    color: rgb(234, 62, 0);
+}
+
+.about-heading
+{
+    font-size: 2rem;
+    padding: 2rem 0 2rem 0;
+}
+
+.about-desc
+{
+    padding: 0 0 2rem 0;
+}
+
+.about-link
+{
+    border-bottom: 2px solid black;
+    padding: 0.8rem 0;
+    text-decoration: none;
+    color: black;
+    width: max-content;
+    transition: all 0.5s;
+}
+
+.about-link:hover
+{
+    color: rgb(234, 62, 0);
+    border-color: rgb(234, 62, 0);
+}
+
+/* Company section starts here */
+
+.company
+{
+    padding: 1rem;
+    height: 100dvh;
+    margin: 0 0 6rem 0;
+    background-color: rgb(236, 236, 236);
+}
+
+.question
+{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-reason
+{
+    height: 10%;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.reasons
+{
+    padding: 0.5rem;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.reason-col1
+{
+    padding: 0.3rem;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.row1
+{
+    font-size: 1.1rem;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.number
+{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: rgb(234, 62, 0);
+}
+
+.reason-heading
+{
+    margin: 0 0 0.8rem 0;
+    font-size: 1.2rem;
+}
+
+/* Time for sales section */
+
+.sales-section
+{
+    padding: 1rem;
+    height: max-content;
+    margin-bottom: 6rem;
+}
+
+.sales-header
+{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    position: static;
+}
+
+.sales-heading
+{
+    font-size: 2rem;
+}
+
+.sales-header-link
+{
+    border-bottom: 2px solid black;
+    padding: 0.25rem 0;
+    width: max-content;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.sales
+{
+    padding: 1rem;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sales-item
+{
+    height: max-content;
+    width: 32%;
+}
+
+.sales-image
+{
+    height: max-content;
+}
+
+.sale-img
+{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.sales-description
+{
+    height: max-content;
+}
+
+.item-name
+{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.item-name > a
+{
+    margin: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.item-counter
+{
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+#num
+{
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0;
+    border: 1px solid black;
+    outline: none;
+    width: 100px;
+}
+
+button
+{
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 0;
+    background-color: whitesmoke;
+    width: 30px;
+}
+
+.last-sales-link
+{
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-sales-link > a
+{
+    margin: 1rem 0;
+    text-decoration: none;
+    color: black;
+}
+
+/* Category Images starts here */
+.category-images
+{
+    height: max-content;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 6rem;
+    align-items: center;
+}
+
+.men-image, .women-image
+{
+    width: 47.5%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.men, .women
+{
+    width: 100%;
+    height: auto;
+}
+
+.image-filter
+{
+    background-color: rgba(0, 0, 0, 0.384);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat-heading
+{
+    color: white;
+    font-size: 2.5rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.cat-link
+{
+    border: 3px solid white;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.2rem;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.25s;
+    border-radius: 5px;
+}
+
+.cat-link:hover
+{
+    background-color: white;
+    color: black;
+}
+.cat-link:active
+{
+    background-color: white;
+    color: black; 
+}
+
+.men-image:hover .image-filter, .women-image:hover .image-filter
+{
+
+    background-color: rgba(0, 0, 0, 0.836);
+}
+
+/* Role secrion starts here */
+
+.role
+{
+    padding: 1rem;
+    height: 75dvh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 249, 238);
+    margin-bottom: 6rem;
+}
+
+.role-desc
+{
+    width: 500px;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    word-spacing: 5px;
+}
+
+.gif
+{
+    width: 400px;
+    height: auto;
+}
+
+.role-gif
+{
+    width: 100%;
+    height: auto;
+}
+
+/* Reviews section is below */
+.reviews-section
+{
+    padding: 1rem;
+    height: 80dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 6rem;
+}
+
+.reviews-heading
+{
+    height: 15%;
+    word-spacing: 20px;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+
+.customer-reviews
+{
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.customer
+{
+    border: 1px solid black;
+    width: 32%;
+    height: 90%;
+    padding: 1rem;
+    transition: box-shadow 0.25s;
+}
+
+.customer:hover, .customer:active
+{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.47);
+}
+
+.review-desc
+{
+    font-style: italic;
+    height: 60%;
+    font-size: 0.9rem;
+}
+
+.face-name
+{
+    height: 40%;
+    font-size: 0.8rem;
+}
+
+.face
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.face-image
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.customer-image1
+{
+    width: 75px;
+    height: auto;
+    position: relative;
+    top: -1rem;
+    left: -0.75rem;
+}
+.customer-image2
+{
+    width: 75px;
+    height: auto;
+    position: relative;
+    top: -0.5rem;
+    left: -1rem;
+}
+.customer-image3
+{
+    width: 120px;
+    height: auto;
+    position: relative;
+    top: -0.5rem;
+    left: -2rem;
+}
+
+.name
+{
+    margin-left: 0.25rem;
+    color: rgb(234, 62, 0);
+}
+
+.star-rating
+{
+    height: 15%;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* mission section starts from here */
+.mission-section
+{
+    height: 100dvh;
+    width: 100%;
+    position: relative;
+    color: whitesmoke;
+}
+
+.mission-image
+{
+    width: 100%;
+    height: auto;
+}
+
+.mission-filter
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.63);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.mission-heading
+{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.mission, .mission-last-line
+{
+    text-align: center;
+    font-size: 1rem;
+    word-spacing: 5px;
+    line-height: 1.4;
+}
+
+.mission-links
+{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.men-link, .women-link
+{
+    font-size: 0.8rem;
+    padding: 0.8rem;
+    width: 200px;
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0.8rem;
+    transition: 0.5s;
+}
+
+.men-link:hover, .women-link:hover
+{
+    background-color: black;
+    color: white;
+}
+.men-link:active, .women-link:active
+{
+    background-color: black;
+    color: white;
+    cursor: wait;
+}
+
+/* Services section begins from here */
+.services-section
+{
+    border-bottom: 1px solid black;
+    margin-bottom: 6rem;
+    height: 15dvh;
+    display: flex;
+    align-items: center;
+}
+
+.service
+{
+    width: 33.33%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.selected
+{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+footer
+{
+    height: 100dvh;
+}
+
+.footer-one
+{
+    height: 85%;
+    display: flex;
+    padding: 0 1rem;
+}
+
+.col1, .col2, .col3, .col4
+{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0 5rem 1rem;
+}
+
+.media-holder
+{
+    padding: 0.3rem;
+    margin-top: 2rem;
+}
+
+.media-links
+{
+    font-size: 1.5rem;
+    margin: 0 0.3rem 0 0;
+    color: black;
+}
+
+.collections, .sections, .footer-nav
+{
+    color: black;
+    text-decoration: none;
+    margin: 0 0 1rem 0;
+    display: inline-block;
+}
+
+.footer-heading
+{
+    margin-bottom: 1.5rem;
+}
+
+.footer-two
+{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.support
+{
+    width: 50px;
+    height: auto;
+    margin: 0 3rem;
+}
+
+/* Sales Page */
+.sales-intro
+{
+    padding: 1rem;
+    height: 150dvh;
+    margin-bottom: 6rem;
+}
+
+.sales-intro-heading
+{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sales-intro-images
+{
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.discount, .limited
+{
+    height:max-content;
+    width: 48%;
+    position: relative;
+}
+
+.discount-image, .limited-image
+{
+    width: 100%;
+    height: max-content;
+}
+
+.discout-desc, .limited-desc
+{
+    height: 99%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.discount-paragraph, .limited-paragraph
+{
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+
+.limited-heading, .discount-heading
+{
+    font-size: 2rem;
+    margin-bottom: 2.2rem;
+}
+
+.learn
+{
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    padding: 0.8rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.learn:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.learn:active
+{
+    background-color: white;
+    color: black;
+    cursor: wait;
+}
+
+/* Contact Page and contact section */
+.contact-section
+{
+    background-color: whitesmoke;
+    height: 100dvh;
+    padding: 3rem 2rem;
+    margin: 2rem 2rem 6rem 2rem;
+}
+
+.contact-heading
+{
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.contact-container
+{
+    height: 90%;
+    display: flex;
+}
+
+.leftside
+{
+    border-right: 1px solid black;
+    height: 100%;
+    width: 400px;
+    padding: 0 1.5rem;
+}
+
+.contact-row
+{
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexed-row
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-table-header
+{
+    padding: 0.4rem;
+}
+
+.contact-table-data
+{
+    padding: 0.4rem;
+    width: 275px;
+}
+
+.contact-row-alone
+{
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact-media-icons
+{
+    font-size: 1.5rem;
+    color: black;
+    margin: 0 1rem;
+}
+
+.facebook:hover, .facebook:active
+{
+    color: blue;
+}
+
+.twitter:hover, .twitter:active
+{
+    color: darkturquoise;
+}
+
+.instagram:hover, .instagram:active
+{
+    color: deeppink;
+}
+
+.rightside
+{
+    border-left: 1px solid black;
+    padding: 0 1.5rem;
+    height: 100%;
+    width: 70%;
+}
+
+.rightside-form
+{
+    width: 100%;
+    height: 100%;
+}
+
+.form-row
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25%;
+}
+
+.form-th
+{
+    padding: 0.5rem 0;
+    text-align: left;
+}
+
+.form-td
+{
+    padding: 0.25rem 0;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#name, #mail
+{
+    width: 100%;
+    height: 50px;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 2.5px;
+    color: orangered;
+    font-size: 1.1rem;
+}
+
+::placeholder
+{
+    color: orangered;
+}
+
+#message
+{
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 2.5px;
+    color: orangered;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+#message:active, #message:focus
+{
+    outline: 2px solid orangered;
+}
+
+#button
+{
+    font-size: 1.1rem;
+    border-radius: 2.5px;
+    color: orangered;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.89) 50%, black 50%);
+    margin-top: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#button:hover
+{
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.89);
+    box-shadow: 4px 4px 2px rgb(234, 62, 0);
+}
+
+#button:active
+{
+    background-color: black;
+    transform: scale(0.95);
+    cursor: wait;
+}
+
+#name:focus, #mail:focus
+{
+    outline: 2px solid orangered;
+}
+
+#name:active, #mail:active
+{
+    outline: 2px solid orangered;
+}
+
+/* My Accout page and My account section */
+.account-section
+{
+    height: 100dvh;
+    padding: 1rem;
+    display: flex;
+    background-color: whitesmoke;
+    margin-bottom: 6rem;
+}
+
+.signup, .login
+{
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.389);
+}
+
+.login-heading, .signup-heading
+{
+    padding: 2rem;
+}
+
+fieldset
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+}
+
+.label-login, .label-signup
+{
+    padding: 0.5rem 0;
+}
+
+#ename, #pwd, #email
+{
+    padding: 1rem;
+    width: 100%;
+    height: 40px;
+    font-size: 1.1rem;
+    color: rgb(234, 62, 0);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#ename:active, #pwd:active, #email:active
+{
+    outline: 2px solid rgb(234, 62, 0);
+}
+#ename:focus, #pwd:focus, #email:focus
+{
+    outline: 2px solid rgb(234, 62, 0);
+}
+
+.check-label
+{
+    padding: 1rem 0;
+}
+
+#login-button, #register-button
+{
+    padding: 1rem;
+    width: 200px;
+    border: none;
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.89) 50%, black 50%);
+    color: rgb(234, 62, 0);
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.5s;
+    cursor: pointer;
+}
+
+#login-button:hover, #register-button:hover
+{
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.89);
+    box-shadow: 4px 4px 2px rgb(234, 62, 0);
+}
+#login-button:active, #register-button:active
+{
+    transform: scale(0.95);
+    cursor: wait;
+    box-shadow: none;
+    background-color: black;
+}
+
+#box
+{
+    accent-color: rgb(234, 62, 0);
+    opacity: 1;
+}
+
+.forgot
+{
+    padding: 1rem 0;
+    text-decoration: none;
+    color: blue;
+}
+
+.forgot:hover
+{
+    text-decoration: underline 1px solid blue;
+}
+
+.forgot:active
+{
+    color: rgb(234, 62, 0);
+}
+
+.forgot:visited
+{
+    text-decoration: none;
+}
+
+/* Cart Page and Section below */
+.cart-section
+{
+    background-color: whitesmoke;
+    padding: 3rem 6rem;
+    height: 50dvh;
+    display: flex;
+    align-items: center;
+}
+
+.cart-container
+{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 1rem;
+}
+
+.cart-heading
+{
+    text-align: center;
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-desc
+{
+    border-top: 3px solid black;
+    background-color: whitesmoke;
+    padding: 1rem;
+    height: 33%;
+    display: flex;
+    align-items: center;
+}
+
+.return-link
+{
+    text-decoration: none;
+    color: black;
+    padding-top: 0.3rem;
+    display: inline-block;
+}
+
+.return
+{
+    height: 33%;
+    display: flex;
+    align-items: center;
+}
+
+/* Checkout Page and Section below */
+
+.checkout-section
+{
+    height: 50dvh;
+    background-color: whitesmoke;
+    padding: 2rem 4rem;
+}
+
+.checkout-container
+{
+    height: 100%;
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+}
+
+.discord:hover, .discord:active
+{
+    color: purple;
+}
+
+.whatsapp:hover, .whatsapp:active
+{
+    color: green;
+}
+
+/* Lost Page */
+/* Lost section */
+.lost-section
+{
+    height: 100dvh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.lost-heading
+{
+    font-size: 10rem;
+    margin-left: -4rem;
+    text-shadow: rgb(234, 62, 0) 10px 10px 10px ;
+}
+
+.lost-desc
+{
+    font-size: 1.5rem;
+}
+
+.lost-link
+{
+    padding: 1rem;
+    width: 290px;
+    border: none;
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.89) 50%, black 50%);
+    color: rgb(234, 62, 0);
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 1rem 0 0 0;
+}
+
+.lost-link:hover
+
+{
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.89);
+    box-shadow: 4px 4px 2px rgb(234, 62, 0);
+}
+.lost-link:active
+{
+    transform: scale(0.95);
+    cursor: wait;
+    box-shadow: none;
+    background-color: black;
+}
+
+@media screen and (orientation: landscape) 
+{
+    .mission-image
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media screen and (min-width >= 2000px)
+{
+    .intro-section
+    {
+        background-image: url(images/xmas.jpg);
+    }
+}
+@media screen and (max-width: 1200px)
+{
+    .sales-intro
+    {
+        height: 100dvh;
+    }
+    /* Sales-intro section and upwards */
+    /* Sales page  */
+
+    /* Mission section and upwards */
+
+    .cat-heading
+    {
+        font-size: 1.6rem;
+    }
+
+    .cat-link
+    {
+        padding: 0.8rem 0.7rem;
+        font-size: 0.8rem;
+    }
+    /* Catrgory section and upwards */
+
+    .intro-section
+    {
+        background-image: url(images/xmas1.jpg);
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+
+    .leftside
+    {
+        margin-top: 1rem;
+        border: none;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .rightside
+    {
+        margin-top: 1rem;
+        border: none;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .contact-section
+    {
+        height: max-content;
+    }
+
+    .contact-container
+    {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Contact Page and contact-section and upwards */
+
+    .role-desc
+    {
+        width: 350px;
+        font-size: 0.9rem
+    }
+
+    .gif
+    {
+        width: 300px;
+        height: auto;
+    }   
+    /* Role section upwards */
+}
+
+@media screen and (max-width: 860px)
+{
+    .login, .signup
+    {
+        width: 80%;
+    }
+
+    .account-section
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+    }
+    /* Account Page and account section upwards */
+
+    .about-section
+    {
+        height: 175dvh;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .section-image
+    {
+        width: 95%;
+    }
+    
+    .about
+    {
+        width: 95%;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .sales-intro-images
+    {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .discount, .limited
+    {
+        margin: 1rem 0 0 0;
+        height:max-content;
+        width: 100%;
+        position: relative;
+    }
+
+    .discount-image, .limited-image
+    {
+        width: 100%;
+        height: max-content;
+    }
+
+    .discount-paragraph, .limited-paragraph
+    {
+        margin: 2rem 0;
+        font-size: 0.9rem;
+    }
+
+    .limited-heading, .discount-heading
+    {
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .learn
+    {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+
+    .sales-intro
+    {
+        height: max-content;
+    }
+    /* Sales-intro section and upwards */
+    /* Sales Page  */
+
+    .footer-two
+    {
+        height: 15%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .support
+    {
+        width: 40px;
+        height: auto;
+        margin: 0;
+    }
+
+    .col1, .col2, .col3, .col4
+    {
+        height: 25%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        padding: 0;
+        margin: 0.5rem 0 0.5rem 0;
+        text-align: center;
+    }
+
+    .footer-one
+    {
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer
+    {
+        height: 150dvh;
+    }
+
+    /* Footer section and upwards */
+
+    .star-rating
+    {
+        display: block;
+        height: 5%;
+        text-align: center;
+    }
+
+    .reviews-heading
+    {
+        height: 7%;
+        font-size: 1.5rem;
+        text-align: center;
+        word-spacing: 10px;
+    }
+    
+    .reason-desc
+    {
+        font-size: 0.8rem;
+    }
+
+    .customer-reviews
+    {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    .customer
+    {
+        border: 1px solid black;
+        width: 70%;
+        height: 32%;
+        padding: 1rem;
+        transition: box-shadow 0.25s;
+    }
+
+    .reviews-section
+    {
+        height: 125dvh;
+        justify-content: space-evenly;
+    }
+    /* review section and upwards */
+
+    .role
+    {
+        padding: 1rem;
+        height: 80dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-items: center;
+        background-color: rgb(255, 249, 238);
+        margin-bottom: 6rem;
+    }
+
+    .role-desc
+    {
+        margin-top: 1rem;
+        width: 90%;
+        font-size: 1.1rem;
+        line-height: 1.4;
+        word-spacing: 5px;
+        text-align-last: center;
+    }
+
+    .gif
+    {
+        margin-top: 1rem;
+        width: 90%;
+        height: auto;
+    }
+    /* Role section and upwards */
+
+    .cat-heading
+    {
+        font-size: 2rem;
+    }
+
+    .cat-link
+    {
+        padding: 1rem 0.8rem;
+        font-size: 1.1rem;
+    }
+
+    .men-image, .women-image
+    {
+        width: 90%;
+        margin: 2rem 0;
+    }
+
+    .category-images
+    {
+        flex-direction: column;
+    }
+    /* Category section and upward */
+
+    .sales-item
+    {
+
+        height: max-content;
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    .sales
+    {
+        padding: 0;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Sales section and upwards */
+
+    .main-reason, .reason-desc
+    {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .reason-col1
+    {
+        padding: 1rem;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .reasons
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .company
+    {
+        height: 175dvh;
+    }
+    /* Company section and upwards */
+
+    .intro-section
+    {
+        background-image: url(images/xmas2.jpg);
+    }
+    
+    .bars
+    {
+        font-size: 1.5rem;
+    }
+
+    .nav2-dropdown
+    {
+        display: block;
+        position: relative;
+    }
+
+    .dropdown-menu
+    {
+        position: absolute;
+        right: 0;
+        background-color: whitesmoke;
+        display: none;
+    }
+
+    label
+    {
+        padding: 0.5rem;
+    }
+
+    label:hover
+    {
+        color: rgb(68, 68, 68);
+    }
+
+    label:active
+    {
+        color: rgb(116, 116, 116);
+    }
+
+    .nav2-dropdown:hover .dropdown-menu
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sale, .shop, .contact
+    {
+        padding: 0.8rem;
+        text-decoration: none;
+        width: 15rem;
+        color: black;
+    }
+
+    .sale:hover, .shop:hover, .contact:hover
+    {
+        background-color: rgb(210, 210, 210);
+    }
+    .sale:active, .shop:active, .contact:active
+    {
+        background-color: whitesmoke;
+
+    }
+
+    .dropdown-menu
+    {
+        display: none;
+    }
+
+    #check:checked + .dropdown-menu
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #check
+    {
+        display: none;
+    }
+
+    .nav1-links, .shop-down, .contact-link
+    {
+        display: none;
+    }
+    
+    .nav2-links
+    {
+        text-decoration: none;
+        color: black;
+        padding: 0.2rem;
+        margin: 0 0.5rem;
+        width: max-content;
+    }
+}
+
+@media screen and (max-width: 576px)
+{
+    .checkout-section
+    {
+        height: 50dvh;
+        background-color: whitesmoke;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+    /* Checkout Page and upwards */
+
+    .cart-desc, .return
+    {
+        font-size: 0.9rem;
+    }
+
+    .cart-section
+    {
+        padding: 1rem;
+    }
+    /* Cart web Page and Cart section upwards */
+
+    .label-login, .label-signup
+    {
+        font-size: 1rem;
+    }
+
+    #login-button, #register-button
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    #ename, #pwd, #email
+    {
+        font-size: 0.8rem;
+    }
+
+    .login, .signup
+    {
+        width: 100%;
+    }
+    /* Account Page and Account section Upwards */
+
+    .contact-heading
+    {
+        font-size: 2rem;
+    }
+
+    .contact-table-data, .contact-table-header
+    {
+        font-size: 0.9rem
+    }
+
+    .contact-table
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo
+    {
+        display: inline-block;
+        width: 275px;
+        text-align: center;
+    }
+
+    .contact-media-icons
+    {
+        margin: 0 0.5rem;
+        font-size: 1rem;
+        color: black;
+    }
+
+    .leftside, .rightside
+    {
+        padding: 0.3rem;
+    }
+
+    .contact-section
+    {
+        margin: 0.7rem;
+        padding: 0.7rem;
+    }
+
+
+
+    /* Contact Page and contact-section and upwards */
+
+    .discount-paragraph, .limited-paragraph
+    {
+        margin: 1.5rem 0;
+        font-size: 0.8rem;
+    }
+
+    .limited-heading, .discount-heading
+    {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .learn
+    {
+        font-size: 0.8rem;
+        padding: 0.7rem;
+    }
+    /* Sales-intro section and upwards */
+    /* Sales Page  */
+
+    .services-section
+    {
+        border-bottom: 1px solid black;
+        height: 20dvh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .service
+    {
+        height: 33.33%;
+        text-align: center;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .selected
+    {
+        border-left: none;
+        border-right: none;
+    }
+    /* Services-section and upwards */
+
+    .star-rating
+    {
+        display: block;
+        height: 5%;
+        text-align: center;
+    }
+
+    .reviews-heading
+    {
+        height: 7%;
+        font-size: 1.5rem;
+        text-align: center;
+        word-spacing: 10px;
+    }
+    
+    .reason-desc
+    {
+        font-size: 0.8rem;
+    }
+
+    .customer-reviews
+    {
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .customer
+    {
+        border: 1px solid black;
+        width: 90%;
+        height: 32%;
+        padding: 1rem;
+        transition: box-shadow 0.25s;
+    }
+
+    .reviews-section
+    {
+        height: 125dvh;
+        justify-content: space-evenly;
+    }
+    /* review section and upwards */
+
+    .arrival-link
+    {
+        font-size: 0.7rem !important;
+    }
+
+    .arrival-heading 
+    {
+        font-size: 1.1rem !important;
+    }
+    /* Arrival section and upwards */
+
+    .cat-heading
+    {
+        font-size: 1.5rem;
+    }
+
+    .cat-link
+    {
+        padding: 0.8rem 0.8rem;
+        font-size: 1.1rem;
+    }
+    /* Category section and upwards */
+
+    .sales-heading
+    {
+        font-size: 1.5rem;
+    }
+
+    .sales-header-link
+    {
+        border-bottom: 2px solid black;
+        padding: 0.25rem 0;
+        display: inline-block;
+        width: max-content;
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: black;
+    }
+    /* sales section and upwards */
+
+    .intro-section
+    {
+        background-image: url(images/xmas3.jpg);
+    }
+
+    .intro-desc
+    {
+        width: 90%;
+    }
+}
